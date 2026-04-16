@@ -1,11 +1,13 @@
 import streamlit as st
-hide_github_icon = """
+hide_menu = """
 <style>
-GithubIcon {
-    visibility: hidden;
-}
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
 </style>
 """
+
+st.markdown(hide_menu, unsafe_allow_html=True)
 from langchain_groq import ChatGroq
 
 llm = ChatGroq(
