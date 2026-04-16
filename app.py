@@ -29,6 +29,8 @@ if user_input:
 
     response = llm.invoke(prompt)
     bot_reply = response.content
+    with st.chat_message("Angel"):
+        st.markdown(bot_reply)
 
     st.session_state.chat_history.append(f"Angel: {bot_reply}")
 
