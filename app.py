@@ -20,7 +20,7 @@ st.title("🤖 Welcome to Angel Chat boooot")
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-user_input = st.text_input("Type your message")
+user_input = st.chat_input("Type your message")
 
 if user_input:
     st.session_state.chat_history.append(f"You: {user_input}")
