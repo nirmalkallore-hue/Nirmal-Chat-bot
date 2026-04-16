@@ -1,7 +1,7 @@
 import streamlit as st
 hide_github_icon = """
 <style>
-#GithubIcon {
+GithubIcon {
     visibility: hidden;
 }
 </style>
