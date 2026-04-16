@@ -1,4 +1,11 @@
 import streamlit as st
+hide_github_icon = """
+<style>
+#GithubIcon {
+    visibility: hidden;
+}
+</style>
+"""
 from langchain_groq import ChatGroq
 
 llm = ChatGroq(
