@@ -25,7 +25,7 @@ user_input = st.chat_input("Type your message")
 if user_input:
     st.session_state.chat_history.append(f"You: {user_input}")
 
-    prompt = "\n".join(st.session_state.chat_history)
+    prompt = "Always reply in English.\n" +"\n".join(st.session_state.chat_history)
 
     response = llm.invoke(prompt)
     bot_reply = response.content
