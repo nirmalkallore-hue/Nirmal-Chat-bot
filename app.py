@@ -11,7 +11,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 from langchain_groq import ChatGroq
 
 llm = ChatGroq(
-    api_key=st.secrets["GROQ_API_KEY"],
+    api_key="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",
     model="llama-3.3-70b-versatile"
 )
 
