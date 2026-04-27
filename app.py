@@ -52,14 +52,29 @@ if "chat_history" not in st.session_state:
 
 user_input = st.chat_input("Type your message")
 
+#if user_input:
+#    st.session_state.chat_history.append(f"You: {user_input}")
+
+#    prompt = "Always reply in English.\n" +"\n".join(st.session_state.chat_history)
+
+#    response = llm.invoke(prompt)
+#    bot_reply = response.content
+    
+
+#    st.session_state.chat_history.append(f"Angel: {bot_reply}")
+
 if user_input:
     st.session_state.chat_history.append(f"You: {user_input}")
 
-    prompt = "Always reply in English.\n" +"\n".join(st.session_state.chat_history)
-
-    response = llm.invoke(prompt)
-    bot_reply = response.content
-    
+    #  Detect "who built this app" type questions
+    if any(keyword in user_input.lower() for keyword in [
+        "who built", "who created", "developer", "author", "who made"
+    ]):
+        bot_reply = "This app was built by Nirmal Kallore 👨‍💻"
+    else:
+        prompt = "Always reply in English.\n" + "\n".join(st.session_state.chat_history)
+        response = llm.invoke(prompt)
+        bot_reply = response.content
 
     st.session_state.chat_history.append(f"Angel: {bot_reply}")
 
