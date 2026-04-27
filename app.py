@@ -44,7 +44,7 @@ llm = ChatGroq(
     model="llama-3.3-70b-versatile"
 )
 
-st.title("🤖 Welcome to Angel Chat bot")
+st.title("🤖 Welcome to Angel Chatbot")
 st.caption("Built by Nirmal Kallore")
 
 if "chat_history" not in st.session_state:
