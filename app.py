@@ -7,6 +7,25 @@ footer {visibility: hidden;}
 </style>
 """
 
+##watermark
+watermark = "Nirmal Kallore Chat Bot"
+<style>
+.watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    opacity: 0.4;
+    font-size: 14px;
+    color: gray;
+    z-index: 100;
+}
+</style>
+
+<div class="watermark">Nirmal Kallore</div>
+"""
+
+st.markdown(watermark, unsafe_allow_html=True)
+
 st.markdown(hide_menu, unsafe_allow_html=True)
 from langchain_groq import ChatGroq
 
