@@ -8,20 +8,24 @@ footer {visibility: hidden;}
 """
 
 ##watermark
+st.markdown(hide_menu, unsafe_allow_html=True)
+
 watermark = """
 <style>
-.watermark {
+[data-testid="stAppViewContainer"]::after {
+    content: "Nirmal Kallore";
     position: fixed;
     bottom: 10px;
     right: 15px;
-    opacity: 0.4;
+    opacity: 0.5;
     font-size: 14px;
-    color: black;
-    z-index: 100;
+    color: gray;
+    z-index: 9999;
 }
 </style>
+"""
 
-<div class="watermark">Nirmal Kallore</div>
+st.markdown(watermark, unsafe_allow_html=True)
 """
 
 st.markdown(watermark, unsafe_allow_html=True)
