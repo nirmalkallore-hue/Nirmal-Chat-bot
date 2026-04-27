@@ -1,3 +1,12 @@
+
+import streamlit as st
+hide_menu = """
+<style>
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
 st.markdown(
     """
     <style>
@@ -8,18 +17,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-
-
-import streamlit as st
-hide_menu = """
-<style>
-#MainMenu {visibility: hidden;}
-header {visibility: hidden;}
-footer {visibility: hidden;}
-</style>
-"""
-
 
 st.markdown(hide_menu, unsafe_allow_html=True)
 from langchain_groq import ChatGroq
