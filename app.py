@@ -8,7 +8,7 @@ footer {visibility: hidden;}
 """
 
 ##watermark
-watermark = "Nirmal Kallore Chat Bot"
+watermark = """
 <style>
 .watermark {
     position: fixed;
