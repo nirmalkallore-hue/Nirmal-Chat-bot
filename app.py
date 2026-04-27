@@ -1,3 +1,16 @@
+st.markdown(
+    """
+    <style>
+    [data-testid="stAppViewContainer"] {
+        background-color: #d4f7d4;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
 import streamlit as st
 hide_menu = """
 <style>
