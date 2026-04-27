@@ -7,28 +7,6 @@ footer {visibility: hidden;}
 </style>
 """
 
-##watermark
-st.markdown(hide_menu, unsafe_allow_html=True)
-
-watermark = """
-<style>
-[data-testid="stAppViewContainer"]::after {
-    content: "Nirmal Kallore";
-    position: fixed;
-    bottom: 10px;
-    right: 15px;
-    opacity: 0.5;
-    font-size: 14px;
-    color: gray;
-    z-index: 9999;
-}
-</style>
-"""
-
-st.markdown(watermark, unsafe_allow_html=True)
-"""
-
-st.markdown(watermark, unsafe_allow_html=True)
 
 st.markdown(hide_menu, unsafe_allow_html=True)
 from langchain_groq import ChatGroq
