@@ -7,6 +7,7 @@ header {visibility: hidden;}
 footer {visibility: hidden;}
 </style>
 """
+#####Green colour
 st.markdown(
     """
     <style>
@@ -17,7 +18,24 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+##Green colou code end 
 
+### Author Name
+st.markdown("""
+<style>
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    font-size: 13px;
+    color: gray;
+    opacity: 0.7;
+}
+</style>
+
+<div class="footer">Built by Nirmal Kallore</div>
+""", unsafe_allow_html=True)
+### Author NAme 
 st.markdown(hide_menu, unsafe_allow_html=True)
 from langchain_groq import ChatGroq
 
