@@ -7,18 +7,18 @@ header {visibility: hidden;}
 footer {visibility: hidden;}
 </style>
 """
-#####Green colour
+#####better UI colour
 st.markdown(
     """
     <style>
     [data-testid="stAppViewContainer"] {
-        background-color: #d4f7d4;
+        background-color: #a8d5a8;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
-##Green colou code end 
+##Better UI code end 
 
 ## Black colour fonts begin
 st.markdown(
