@@ -20,6 +20,38 @@ st.markdown(
 )
 ##Green colou code end 
 
+## Black colour fonts begin
+st.markdown(
+    """
+    <style>
+    /* Make all text black */
+    html, body, [class*="css"]  {
+        color: black !important;
+    }
+
+    /* Chat messages */
+    .stChatMessage {
+        color: black !important;
+    }
+
+    /* Input box text */
+    input, textarea {
+        color: black !important;
+    }
+
+    /* Placeholder text */
+    ::placeholder {
+        color: #555 !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+### Black colur font ends
+
+
+
 ### Author Name
 st.markdown("""
 <style>
